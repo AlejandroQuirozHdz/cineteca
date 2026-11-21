@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="es" class="sin-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>El precio de una mentira · Cine 1BIO1</title>
+  <meta name="description" content="Cortometraje animado del grupo 1BIO1 sobre ética y responsabilidad social en la inteligencia artificial. Función única de 8 minutos.">
+  <meta name="theme-color" content="#170d1a">
+  <meta property="og:type" content="video.movie">
+  <meta property="og:title" content="El precio de una mentira">
+  <meta property="og:description" content="Ética y responsabilidad social en la IA. Un cortometraje del grupo 1BIO1.">
+  <meta property="og:image" content="https://alejandroquirozhdz.github.io/cineteca/img/og.jpg">
+  <meta property="og:url" content="https://alejandroquirozhdz.github.io/cineteca/">
+  <meta property="og:locale" content="es_MX">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap">
+  <link rel="stylesheet" href="css/cine.css">
+  <script>document.documentElement.classList.replace('sin-js', 'con-js');</script>
+</head>
+<body>
+  <svg class="oculto" aria-hidden="true" focusable="false">
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13a.8.8 0 0 0 1.2.7l10.4-6.5a.8.8 0 0 0 0-1.4L9.2 4.8A.8.8 0 0 0 8 5.5Z" fill="currentColor"/></symbol>
+    <symbol id="i-pausa" viewBox="0 0 24 24"><rect x="6" y="5" width="4.2" height="14" rx="1" fill="currentColor"/><rect x="13.8" y="5" width="4.2" height="14" rx="1" fill="currentColor"/></symbol>
+    <symbol id="i-volumen" viewBox="0 0 24 24"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z" fill="currentColor"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-mudo" viewBox="0 0 24 24"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z" fill="currentColor"/><path d="m16 9.5 5 5m0-5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-foco" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0-3.6 10.8c.7.6 1.1 1.3 1.1 2.2v.5h5V16c0-.9.4-1.6 1.1-2.2A6 6 0 0 0 12 3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9.8 19h4.4M10.6 21.2h2.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-pantalla" viewBox="0 0 24 24"><path d="M4 9V5.5A1.5 1.5 0 0 1 5.5 4H9M15 4h3.5A1.5 1.5 0 0 1 20 5.5V9M20 15v3.5a1.5 1.5 0 0 1-1.5 1.5H15M9 20H5.5A1.5 1.5 0 0 1 4 18.5V15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-salir" viewBox="0 0 24 24"><path d="M9 4v3.5A1.5 1.5 0 0 1 7.5 9H4M20 9h-3.5A1.5 1.5 0 0 1 15 7.5V4M15 20v-3.5a1.5 1.5 0 0 1 1.5-1.5H20M4 15h3.5A1.5 1.5 0 0 1 9 16.5V20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-flecha" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <a class="saltar" href="#sala">Saltar a la película</a>
+
+  <!-- ============ FACHADA: marquesina y taquilla ============ -->
+  <header class="fachada" id="inicio">
+    <div class="guirnalda" id="guirnalda" aria-hidden="true"></div>
+
+    <nav class="menu" aria-label="Secciones">
+      <a href="#sala">Sala</a>
+      <a href="#programa">Programa</a>
+      <a href="#frases">Frases</a>
+      <a href="#reparto">Reparto</a>
+      <a href="#guion">Guion</a>
+    </nav>
+
+    <div class="fachada__escena">
+      <div class="letrero" aria-hidden="true">
+        <span>C</span><span>I</span><span>N</span><span>E</span>
+      </div>
+
+      <div class="marquesina">
+        <div class="marquesina__focos" id="focos" aria-hidden="true"></div>
+        <p class="marquesina__banda">Hoy · Función única · Sala 1BIO1</p>
+        <h1 class="tablero" id="tablero">
+          <span class="tablero__fila">El precio de</span>
+          <span class="tablero__fila">una mentira</span>
+        </h1>
+        <p class="marquesina__sub">Ética y responsabilidad social en la IA</p>
+      </div>
+
+      <div class="taquilla">
+        <div class="taquilla__texto">
+          <p class="taquilla__autoras">Un cortometraje animado de Yamilet, Briana, Yatziri y Estrella.</p>
+          <p class="taquilla__datos"><span>8 minutos</span><span>Español</span><span>Para todo público</span></p>
+        </div>
+
+        <article class="boleto" id="boleto" aria-labelledby="boleto-titulo">
+          <div class="boleto__cuerpo">
+            <p class="boleto__casa">Cine 1BIO1 · Función única</p>
+            <h2 class="boleto__pelicula" id="boleto-titulo">El precio de una mentira</h2>
+            <dl class="boleto__datos">
+              <div><dt>Materia</dt><dd>Comunicación y Habilidades Digitales</dd></div>
+              <div><dt>Docente</dt><dd>Mtra. Ana Rita Ramírez Hernández</dd></div>
+              <div><dt>Sala</dt><dd>Grupo 1BIO1</dd></div>
+              <div><dt>Duración</dt><dd>8:00 min</dd></div>
+              <div class="boleto__precio"><dt>Precio</dt><dd>Tu confianza</dd></div>
+            </dl>
+          </div>
+          <div class="boleto__talon">
+            <p class="boleto__admite">Admite <strong>1</strong></p>
+            <p class="boleto__folio">N.º 0001BIO1</p>
+            <a class="boleto__cortar" id="cortar" href="#sala">Cortar y entrar</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ SALA ============ -->
+    <section class="sala" id="sala" aria-labelledby="sala-titulo">
+      <h2 class="oculto" id="sala-titulo">Sala de proyección</h2>
+      <div class="sala__muro" aria-hidden="true">
+        <span class="aplique aplique--izq"></span>
+        <span class="aplique aplique--der"></span>
+      </div>
+      <div class="haz" aria-hidden="true"></div>
+
+      <div class="escenario" id="escenario">
+        <div class="pantalla" id="pantalla">
+          <div class="resplandor" aria-hidden="true"><span id="amb-izq"></span><span id="amb-der"></span></div>
+          <div class="pantalla__marco">
+            <video class="pantalla__video" id="pelicula" preload="metadata" poster="img/poster.jpg" playsinline controls>
+              <source id="pelicula-src" src="video/el-precio-de-una-mentira.mp4" type="video/mp4">
+              <p>Tu navegador no puede reproducir este video. <a href="video/el-precio-de-una-mentira.mp4">Descárgalo aquí</a>.</p>
+            </video>
+            <canvas class="cuenta" id="cuenta" aria-hidden="true" hidden></canvas>
+            <div class="cargando" id="cargando" aria-hidden="true" hidden><span></span></div>
+            <p class="aviso" id="aviso" role="status" hidden></p>
+          </div>
+
+          <div class="controles" id="controles" hidden>
+            <div class="linea" id="linea">
+              <div class="linea__pista">
+                <div class="linea__cargado" id="cargado"></div>
+                <div class="linea__avance" id="avance"></div>
+              </div>
+              <div class="linea__marcas" id="marcas" aria-hidden="true"></div>
+              <div class="linea__carril" id="carril" aria-hidden="true"><span class="linea__perilla"></span></div>
+              <input class="linea__input" id="posicion" type="range" min="0" max="480" step="0.1" value="0" aria-label="Posición en la película">
+              <div class="linea__globo" id="globo" aria-hidden="true" hidden></div>
+            </div>
+            <div class="controles__fila">
+              <button class="control" id="btn-play" type="button" aria-label="Reproducir" title="Reproducir (K)">
+                <svg aria-hidden="true"><use href="#i-play"/></svg>
+              </button>
+              <p class="tiempo"><span id="tiempo-actual">0:00</span> / <span id="tiempo-total">8:00</span></p>
+              <p class="capitulo-actual" id="capitulo-actual"></p>
+              <button class="control control--volumen" id="btn-mudo" type="button" aria-label="Silenciar" aria-pressed="false" title="Silenciar (M)">
+                <svg aria-hidden="true"><use href="#i-volumen"/></svg>
+              </button>
+              <input class="volumen" id="volumen" type="range" min="0" max="1" step="0.05" value="1" aria-label="Volumen">
+              <button class="control" id="btn-luces" type="button" aria-label="Luces de la sala" aria-pressed="true" title="Luces de la sala (L)">
+                <svg aria-hidden="true"><use href="#i-foco"/></svg>
+              </button>
+              <button class="control" id="btn-pantalla" type="button" aria-label="Pantalla completa" title="Pantalla completa (F)">
+                <svg aria-hidden="true"><use href="#i-pantalla"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="telon telon--izq" aria-hidden="true"></div>
+        <div class="telon telon--der" aria-hidden="true"></div>
+        <div class="bambalina" aria-hidden="true"></div>
+
+        <div class="portada" id="portada">
+          <p class="portada__sala">Sala 1BIO1</p>
+          <button class="boton-funcion" id="comenzar" type="button">
+            <svg aria-hidden="true"><use href="#i-play"/></svg>
+            Comenzar la función
+          </button>
+          <p class="portada__nota">8:00 · Sube el volumen</p>
+        </div>
+
+        <div class="fin" id="fin" hidden>
+          <p class="fin__titulo">Fin</p>
+          <p class="fin__pregunta">¿Tú confías en lo que te dice una máquina?</p>
+          <div class="fin__acciones">
+            <button class="boton-funcion boton-funcion--chico" id="otra-vez" type="button">Ver de nuevo</button>
+            <a class="enlace-claro" href="#guion">Leer el guion</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="butacas" aria-hidden="true">
+        <svg viewBox="0 0 1600 180" preserveAspectRatio="xMidYMax slice">
+          <defs>
+            <linearGradient id="g-butaca" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" class="butaca-luz"/>
+              <stop offset="1" class="butaca-sombra"/>
+            </linearGradient>
+            <pattern id="fila-atras" width="72" height="90" patternUnits="userSpaceOnUse" x="10">
+              <path d="M8 90V34Q8 12 36 12T64 34V90Z" fill="url(#g-butaca)" opacity=".7"/>
+            </pattern>
+            <pattern id="fila-frente" width="104" height="110" patternUnits="userSpaceOnUse" x="-30">
+              <path d="M10 110V46Q10 14 52 14T94 46V110Z" fill="url(#g-butaca)"/>
+              <rect x="44" y="30" width="16" height="3" rx="1.5" class="butaca-numero"/>
+            </pattern>
+          </defs>
+          <rect y="60" width="1600" height="120" fill="url(#fila-atras)"/>
+          <g class="cabezas">
+            <path d="M232 104a22 24 0 1 1 44 0 22 24 0 0 1-44 0Zm-22 76c4-34 24-50 44-50s40 16 44 50Z"/>
+            <path d="M598 98a24 26 0 1 1 48 0 24 26 0 0 1-48 0Zm-24 82c4-36 26-54 48-54s44 18 48 54Z"/>
+            <path d="M676 108a20 22 0 1 1 40 0 20 22 0 0 1-40 0Zm-20 72c3-30 21-46 40-46s37 16 40 46Z"/>
+            <path d="M1046 100a23 25 0 1 1 46 0 23 25 0 0 1-46 0Zm-23 80c4-36 25-52 46-52s42 16 46 52Z"/>
+            <path d="M1372 104a21 23 0 1 1 42 0 21 23 0 0 1-42 0Zm-21 76c4-32 23-48 42-48s38 16 42 48Z"/>
+          </g>
+          <rect y="70" width="1600" height="110" fill="url(#fila-frente)"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ============ PROGRAMA DE MANO ============ -->
+    <section class="programa" id="programa" aria-labelledby="programa-titulo">
+      <div class="seccion-cabeza seccion-cabeza--fila aparecer">
+        <div>
+          <p class="rotulo">Programa de mano</p>
+          <h2 id="programa-titulo">Nueve escenas, cinco voces</h2>
+          <p class="seccion-cabeza__nota">Elige una escena y la película empieza ahí.</p>
+        </div>
+        <div class="cinta-flechas">
+          <button class="control control--claro" id="cinta-atras" type="button" aria-label="Escenas anteriores"><svg aria-hidden="true" style="transform:scaleX(-1)"><use href="#i-flecha"/></svg></button>
+          <button class="control control--claro" id="cinta-adelante" type="button" aria-label="Escenas siguientes"><svg aria-hidden="true"><use href="#i-flecha"/></svg></button>
+        </div>
+      </div>
+      <ol class="cinta" id="cinta" aria-label="Escenas de la película"></ol>
+    </section>
+
+    <!-- ============ FRASES (intertítulos) ============ -->
+    <section class="frases" id="frases" aria-labelledby="frases-titulo">
+      <div class="seccion-cabeza aparecer">
+        <p class="rotulo">Intertítulos</p>
+        <h2 id="frases-titulo">Frases para salir del cine</h2>
+      </div>
+      <ol class="intertitulos">
+        <li class="intertitulo aparecer">
+          <p class="intertitulo__num">Lección 1</p>
+          <blockquote class="intertitulo__texto"><p>La inteligencia artificial no es responsable de nada. Nosotros&nbsp;sí.</p></blockquote>
+          <p class="intertitulo__pie">Briana · <a class="ir" href="#sala" data-t="142.94">Ver en 2:22</a></p>
+        </li>
+        <li class="intertitulo aparecer">
+          <p class="intertitulo__num">Lección 2</p>
+          <blockquote class="intertitulo__texto"><p>La mentira más peligrosa es la que parece&nbsp;ciencia.</p></blockquote>
+          <p class="intertitulo__pie">Briana · <a class="ir" href="#sala" data-t="213.46">Ver en 3:33</a></p>
+        </li>
+        <li class="intertitulo aparecer">
+          <p class="intertitulo__num">Lección 3</p>
+          <blockquote class="intertitulo__texto"><p>Cuando cualquier cosa puede falsificarse, lo que perdemos no es dinero. Es la&nbsp;confianza.</p></blockquote>
+          <p class="intertitulo__pie">Yatziri · <a class="ir" href="#sala" data-t="268.9">Ver en 4:28</a></p>
+        </li>
+        <li class="intertitulo aparecer">
+          <p class="intertitulo__num">Lección 4</p>
+          <blockquote class="intertitulo__texto"><p>La tecnología no tiene valores propios. Los valores los ponemos&nbsp;nosotros.</p></blockquote>
+          <p class="intertitulo__pie">Yatziri · <a class="ir" href="#sala" data-t="353.93">Ver en 5:53</a></p>
+        </li>
+        <li class="intertitulo intertitulo--reglas aparecer">
+          <p class="intertitulo__num">Antes de creerle a una máquina</p>
+          <ol class="tres-reglas">
+            <li>Verifica la fuente.</li>
+            <li>Duda de lo que suena demasiado perfecto.</li>
+            <li>La última palabra siempre debe ser humana.</li>
+          </ol>
+          <p class="intertitulo__pie">Briana, Yatziri y Yamilet · <a class="ir" href="#sala" data-t="446.08">Ver en 7:26</a></p>
+        </li>
+        <li class="intertitulo intertitulo--final aparecer">
+          <blockquote class="intertitulo__texto"><p>El precio de una mentira no lo paga la máquina. Lo pagamos&nbsp;nosotros.</p></blockquote>
+          <p class="intertitulo__pie">Estrella · <a class="ir" href="#sala" data-t="457.44">Ver en 7:37</a></p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ REPARTO ============ -->
+    <section class="reparto" id="reparto" aria-labelledby="reparto-titulo">
+      <div class="seccion-cabeza aparecer">
+        <p class="rotulo">Reparto</p>
+        <h2 id="reparto-titulo">Un cortometraje de</h2>
+      </div>
+      <ul class="elenco">
+        <li class="integrante aparecer">
+          <img class="integrante__foto" src="img/yamilet.jpg" alt="Yamilet como personaje animado de la película" width="320" height="320" loading="lazy">
+          <p class="integrante__nombre"><span>Alpizar Reyes</span> Yamilet Leynadi</p>
+          <p class="integrante__parte">Cuenta su leyenda de 0:00 a 2:16: la máquina que inventa, qué es realmente la IA y el juicio inventado.</p>
+          <a class="ir" href="#sala" data-t="0">Ver su parte</a>
+        </li>
+        <li class="integrante aparecer">
+          <img class="integrante__foto" src="img/briana.jpg" alt="Briana como personaje animado de la película" width="320" height="320" loading="lazy">
+          <p class="integrante__nombre"><span>Chavez Guerrero</span> Briana Danae</p>
+          <p class="integrante__parte">Cuenta su leyenda de 2:16 a 4:07: la primera lección, el sesgo invisible y la videollamada falsa.</p>
+          <a class="ir" href="#sala" data-t="136.31">Ver su parte</a>
+        </li>
+        <li class="integrante aparecer">
+          <img class="integrante__foto" src="img/yatziri.jpg" alt="Yatziri como personaje animado de la película" width="320" height="320" loading="lazy">
+          <p class="integrante__nombre"><span>Gomez Sanchez</span> Yatziri Daniela</p>
+          <p class="integrante__parte">Cuenta su leyenda de 4:07 a 6:06: voces clonadas, la ética en la escuela y los valores.</p>
+          <a class="ir" href="#sala" data-t="246.97">Ver su parte</a>
+        </li>
+        <li class="integrante aparecer">
+          <img class="integrante__foto" src="img/estrella.jpg" alt="Estrella como personaje animado de la película" width="320" height="320" loading="lazy">
+          <p class="integrante__nombre"><span>Quiroz Hernández</span> Estrella Michel</p>
+          <p class="integrante__parte">Cuenta su leyenda de 6:06 a 8:00: quién controla a la IA, el amanecer y la pregunta final.</p>
+          <a class="ir" href="#sala" data-t="366.52">Ver su parte</a>
+        </li>
+      </ul>
+
+      <div class="facturacion aparecer">
+        <p><span class="chica">Grupo</span> <span class="media">1BIO1</span> <span class="chica">presenta</span></p>
+        <p class="grande">El precio de una mentira</p>
+        <p class="chica">un cortometraje de</p>
+        <p class="media">Alpizar Reyes Yamilet Leynadi · Chavez Guerrero Briana Danae</p>
+        <p class="media">Gomez Sanchez Yatziri Daniela · Quiroz Hernández Estrella Michel</p>
+        <p><span class="chica">materia</span> <span class="media">Comunicación y Habilidades Digitales</span></p>
+        <p><span class="chica">maestra</span> <span class="media">Ana Rita Ramírez Hernández</span></p>
+        <p class="chica">Guion, voces y animación hechos con inteligencia artificial · México · 2026</p>
+      </div>
+    </section>
+
+    <!-- ============ GUION ============ -->
+    <section class="guion" id="guion" aria-labelledby="guion-titulo">
+      <div class="seccion-cabeza aparecer">
+        <p class="rotulo">Guion</p>
+        <h2 id="guion-titulo">Todo lo que se dice en la película</h2>
+        <p class="seccion-cabeza__nota">Toca cualquier frase y la película salta a ese momento.</p>
+        <button class="boton-texto" id="guion-todo" type="button" aria-expanded="false">Abrir todas las escenas</button>
+      </div>
+      <div class="guion__texto" id="guion-texto"></div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="transparencia aparecer">
+      <h2>Hecho con IA, y lo decimos</h2>
+      <!-- Si quieren, agreguen aquí con qué herramientas de IA hicieron el video. -->
+      <p>En la película dijimos que la honestidad empieza por decir cuándo usamos inteligencia artificial. Este cortometraje se hizo con herramientas de IA, como pedía la tarea: el diálogo, las voces de los personajes y la animación. Las decisiones, la revisión y la responsabilidad de lo que dice son del equipo. Esta página también se hizo con ayuda de IA.</p>
+    </div>
+    <p class="pie__firma">Cine 1BIO1 · Comunicación y Habilidades Digitales · 2026</p>
+  </footer>
+
+  <div class="en-funcion" id="en-funcion" hidden>
+    <span class="en-funcion__punto" aria-hidden="true"></span>
+    <span>En función <span id="en-funcion-tiempo">0:00</span></span>
+    <button type="button" id="en-funcion-pausa">Pausar</button>
+    <a href="#sala">Volver a la sala</a>
+  </div>
+
+  <script src="js/datos.js"></script>
+  <script src="js/cine.js"></script>
+</body>
+</html>
